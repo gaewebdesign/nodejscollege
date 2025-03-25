@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node.js GCP </title>
+</head>
+<style>
+table {
+  width: 75%;
+}
+</style>
+
+<body bgcolor="lightblue">
+  <center>
+
+    <h1> Go Seahawks!</h1>
+    <h2>Cabrillo College CS92 SysOps</h2>
+    <h2>Sample node.js application hosted on Google App Platform (GCP) </h2>
+
+    <table border="0">
+
+</table>
+
+
+<table border="0">
+    <tr><td><h3>Instructions --- </h3></tr>
+        <tr><td>Follow <a href="http://phpcabrillo.uw.r.appspot.com"> PHP app </tr>
+        <tr><td>Download    sample Google Apps<a href="http://phpcabrillo.uw.r.appspot.com"> Samples </tr>
+
+  <tr> <td>Create a directory (anywhere) on your commputer</tr>
+  <tr> <td>as node.js applcation are from the express serverr</tr>
+
+    <tr> <td>Create a default app.js file and place at the same location as package.json</tr>
+    <tr> <td>run application usng npm start </tr>
+
+   <tr> <td>run application using npm start </tr>
+   <td>Create an app.yaml file (indentation matters)</td>
+ 
+</tr>
+</table></table>
+
+<table border="0">
+<tr>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;runtime: nodejs20</td> <br>
+<tr>
+<!--
+<tr>
+   <td>&nbsp;&nbsp;&nbsp;&nbsp;runtime_config: </td>
+   <tr>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;operating_system: "ubuntu22"</td>
+   <tr>
+   <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document_root: .             &nbsp;</td>
+
+</tr>
+-->
+</table>
+
+<table border="0">
+
+</table>
+
+<center>
+
+<table border="0" align="center">
+<tr><td>  Search for sample app.yaml files </tr>
+<tr><td>Place app.yaml into the root directory of your project (same level as index.php)</td></table>
+
+<table border="0">
+<tr><td><h3>gcloud commands  </h3></tr>
+ <tr><td>  gcloud auth login   (needed to authorize via browser)</tr>
+ <tr><td>  gcloud config set project <project_id> (select your project)</tr>
+<tr><td>  gcloud app deploy  (will upload and instantiate your project)</tr>
+<tr><td>  the first time will ask for region to deploy (ie us-west-1c)</tr>
+<tr><td> from browser go to your project url of the form &lt;project_id&gt;.uw.r.appspsot.com </tr>
+<tr><td>This application is at <a href="http://www.phpcabrillo.uw.r.appspot.com/"> http://phpcabrillo.uw.r.appspot.com </a>
+</td>
+
+</table>
+    
+<table>
+<tr><td><h3>Notes  </h3></tr>
+<tr><td> Once GCP SDK is installed just need to update to get the latest version (gcloud components update)</tr> 
+<tr><td> All development can be done on your local computer </tr> 
+<tr><td> Use preferred text editor on MacOS/Windows/Linux </tr> 
+<tr><td> Use  github to save code </tr> 
+<tr><td> After code changes use gcloud app update to upload to App Engine </tr> 
+<tr><td> Sometimes will need to re-authenticate using gcloud command </tr> 
+
+</table>
+
+
+</body>
+</html>
