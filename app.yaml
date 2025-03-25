@@ -17,7 +17,11 @@ runtime: nodejs20
 
 #NPM
 # npm run serve
-# nodemon.json  (needed to watch file changes and auto restart server)
+# added nodemon to package.json for file watching
+# nodemon.json  (needed to add to defaultwatch file changes and auto restart server)
+# otherwise only .js files are monitored
+
+
 
 # GIT
 # to create this repository starting from command line
