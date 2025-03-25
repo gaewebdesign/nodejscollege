@@ -17,7 +17,7 @@ runtime: nodejs20
 
 #NPM
 # npm run serve
-
+# nodemon.json  (needed to watch file changes and auto restart server)
 
 # GIT
 # to create this repository starting from command line
