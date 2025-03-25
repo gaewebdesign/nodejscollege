@@ -15,7 +15,11 @@
 runtime: nodejs20
 # [END gae_quickstart_yaml]
 
+#NPM
+# npm run serve
 
+
+# GIT
 # to create this repository starting from command line
 # gh repo create
 # answer question
@@ -24,3 +28,5 @@ runtime: nodejs20
 # Visibility Public
 #Add a remote yes
 # What should the new remote be called? origin (default)
+
+# git push --set-upstream origin main
