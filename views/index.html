@@ -25,20 +25,77 @@ table {
 
 <table border="0">
     <tr><td><h3>Instructions --- </h3></tr>
-        <tr><td>Follow <a href="http://phpcabrillo.uw.r.appspot.com"> PHP app </tr>
-        <tr><td>Download    sample Google Apps<a href="http://phpcabrillo.uw.r.appspot.com"> Samples </tr>
+      <tr><td>Follow instructions to install <a href="http://phpcabrillo.uw.r.appspot.com"> GCP SDK </a>
+        <tr><td>Install node.js 
+        <tr><td>Download code from github for this <a href="https://github.com/gaewebdesign/nodejscollege"> NodeJs App </tr>
 
-  <tr> <td>Create a directory (anywhere) on your commputer</tr>
-  <tr> <td>as node.js applcation are from the express serverr</tr>
+          <tr><td>OR </tr>
+          <tr><td><h2>Create a sample node.js application</h2></tr>
+          <tr><td></tr>
+         <tr> <td>Create a directory to hold node.js files) </tr>  
+         <tr> <td>npm init ( initializes default nodejs app) </tr>  
+        <tr> <td>npm install express (installs node module express ) </tr>  
+     
+          <tr> <td>Create app.js in the root directory of the nodejs app  </tr>
 
-    <tr> <td>Create a default app.js file and place at the same location as package.json</tr>
-    <tr> <td>run application usng npm start </tr>
+</table>
 
-   <tr> <td>run application using npm start </tr>
-   <td>Create an app.yaml file (indentation matters)</td>
- 
-</tr>
-</table></table>
+<tabLe border = "0">
+
+   <tr><td>'use strict';</td></tr>
+   &nbsp;&nbsp;&nbsp;
+
+    <tr><td>&nbsp;const express = require('express');</td></tr>
+   <tr><td>&nbsp;&nbsp;&nbsp;   const path = require('path');
+  <tr><td>&nbsp;&nbsp;  const app = express();</td></tr>
+   <tr><td>&nbsp;&nbsp;&nbsp;  app.get('/', (req, res) => { </td></tr>
+   <tr><td>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; res.sendFile(path.join(__dirname, 'views', 'index.html'));  </td></tr>
+   <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  const PORT = parseInt(process.env.PORT) || 8080;  </td></tr>
+   <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; console.log(`App listening on port ${PORT}`);  </td></tr>
+   <tr><td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; console.log('Press Ctrl+C to quit.');  </td></tr>
+   <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  });  </td></tr>
+   
+   <tr><td>   module.exports = app;  </td></tr>
+   <tr><td>   </td></tr>
+   <tr><td>   </td></tr>
+   <tr><td>   </td></tr>
+   <tr><td>   </td></tr>
+   <tr><td>   </td></tr>
+
+   </table>
+
+   <table border="0">
+    <tr> <td>run application using node app.js Or </tr>
+    <tr> <td>npm start if package.json has been modified </td> </tr>
+     <tr> <td>view app at http://localhost:8080 </tr></tr>
+
+      <tr> <td><h2>GCloud setup</h2> </tr></tr>
+      <tr> <td>Create app.yaml in the root directory of the nodejs app  </tr>
+
+   </table>
+   <!--
+  
+  const app = express();
+  
+  app.get('/', (req, res) => {
+  //  res.status(200).send('Hello, world!').end();
+    res.sendFile(path.join(__dirname, 'views', 'index.html'));
+   
+  
+  });
+  
+  // Start the server
+  const PORT = parseInt(process.env.PORT) || 8080;
+  app.listen(PORT, () => {
+    console.log(`App listening on port ${PORT}`);
+    console.log('Press Ctrl+C to quit.');
+  });
+  // [END gae_node_request_example]
+  
+  module.exports = app;
+-->
+</tabLe>
+
 
 <table border="0">
 <tr>
@@ -61,11 +118,12 @@ table {
 </table>
 
 <center>
-
+<!--
 <table border="0" align="center">
 <tr><td>  Search for sample app.yaml files </tr>
 <tr><td>Place app.yaml into the root directory of your project (same level as index.php)</td></table>
-
+</table>
+-->
 <table border="0">
 <tr><td><h3>gcloud commands  </h3></tr>
  <tr><td>  gcloud auth login   (needed to authorize via browser)</tr>
